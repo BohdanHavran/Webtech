@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1>Реєстрація в бібліотеку</h1>
+	<form enctype="multipart/form-data" method = "post">
+		<fieldset>
+			<fieldset>
+				<legend>Контактні дані: </legend>
+				<p>ПІБ: <input type="text" name="pib" tabindex="1" placeholder="ПІБ"></p>
+				<p>Email: <input type="email" name="login" tabindex="2" placeholder="Електрона адрема" required="required"></p>
+				<p>Пароль: <input type="password" name="pass" tabindex="3" placeholder="Пароль" required="required"></p>
+				<p>Адреса сайта: <input type="url" name="url" tabindex="4" placeholder="http://"></p>
+			</fieldset>
+			<fieldset>
+				<legend>Контактні дані: </legend>
+				Стать:
+				<select name="select1" tabindex="5">
+						<option selected value="s1">Male</option>
+						<option value="s2">Female</option>	
+				</select>
+				<br>
+				Розкажіть про себе:
+				<textarea cols="55" rows="5" tabindex="6" required="required" placeholder="Напиши про себе"></textarea>
+			</fieldset>
+			<fieldset>
+				<legend>Переваги у літературі: </legend>
+				<input type="checkbox" name="vehicle1" value="clasic" tabindex="7">Класична література<br>
+				<input type="checkbox" name="vehicle2" value="tech" tabindex="8">Наукова фантастика<br>
+				<input type="checkbox" name="vehicle2" value="detectiv" tabindex="9">Детектив<br>
+			</fieldset>
+			<fieldset>
+				<legend>Чи згодні Ви з правилами сайту? </legend>
+				<input type="radio" name="stat" value="yes" checked tabindex="10">Так<br>
+					<input type="radio" name="stat" value="no" tabindex="11">Ні<br>
+			</fieldset>
+			<fieldset>
+				<legend>Чи згодні Ви з правилами сайту? </legend>
+				<input type="submit" value="Зареєструватися">
+				<input type="reset" value="Очистити Форму">
+			</fieldset>
+		</fieldset>
+	</form>
+</body>
+</html>
